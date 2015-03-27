@@ -1,0 +1,4 @@
+gnureadline==6.3.3
+ipdb==0.8
+ipython==3.0.0
+requests==2.6.0
