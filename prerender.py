@@ -64,7 +64,8 @@ class LocalizeSEOMiddleware(object):
 
     def get_response(self, url):
         response = self.session.get(url)
-        assert response.status_code < 500
+        if response.status_code >= 500:
+            raise ValueError("Error Response")
         r = HttpResponse(response)
         r.status_code = response.status_code
         return r
