@@ -8,7 +8,9 @@ from django.http import HttpResponse
 import logging
 logger = logging.getLogger(__name__)
 
+
 class LocalizeSEOMiddleware(object):
+
     def __init__(self, *args, **kwargs):
         regex_str = "|".join(settings.USER_AGENTS)
         regex_str = ".*?(%s)" % regex_str
@@ -21,7 +23,8 @@ class LocalizeSEOMiddleware(object):
         if not settings.ENABLED:
             return
 
-        if self.ignore_request(request): #TBI makesure rootDomain is available
+        # TBI makesure rootDomain is available
+        if self.ignore_request(request):
             return
 
         if "HTTP_USER_AGENT" not in request.META:
@@ -30,10 +33,10 @@ class LocalizeSEOMiddleware(object):
         if not self.USER_AGENT_REGEX.match(request.META["HTTP_USER_AGENT"]):
             return
 
-        render_url = self.build_render_url(request) #TBI
+        render_url = self.build_render_url(request)  # TBI
 
         try:
-            return self.get_response(render_url) #TBI
+            return self.get_response(render_url)  # TBI
         except Exception as e:
             logger.Exception(e)
 
@@ -68,11 +71,3 @@ class LocalizeSEOMiddleware(object):
         r = HttpResponse(response)
         r.status_code = response.status_code
         return r
-
-
-if __name__ == "__main__":
-    from django.http import HttpRequest
-    h = HttpRequest()
-    h.META["HTTP_USER_AGENT"] = "Googlebot"
-    l = LocalizeMiddleware()
-    print(l.process_request(h))

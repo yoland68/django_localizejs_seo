@@ -8,9 +8,11 @@ Questions? We're happy to help. [Email us](https://localizejs.com/?modal=misc/su
 Installation
 ----------
 
-Install via Github: 
+Install via Pip: 
 
-    #STUB
+    pip install django_localizejs_seo
+
+you can also install by downloading the repo and run `python setup.py install`
 
 To add the Localize.js SEO middleware to your Django project, first add the app and middleware in your `settings.py` file:
     
