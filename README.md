@@ -24,7 +24,7 @@ To add the Localize.js SEO middleware to your Django project, first add the app 
 
 Then under `settings.py`, add the following lines to enable Localize SEO and customize prerender url
 
-    LOCALIZE_SEO_PRERENDER_URL = "https://prerender.localizejs.com/api/prerender/get"
+    LOCALIZE_SEO_PRERENDER_URL = "https://prerender-cdn.localizejs.com/api/prerender/get"
     LOCALIZE_SEO_ENABLED = True
 
 ### How it works

@@ -54,4 +54,4 @@ USER_AGENTS = frozenset(getattr(django_settings, 'LOCALIZE_SEO_USER_AGENTS', (
     "adsbot-google"
 )))
 
-PRERENDER_URL = getattr(django_settings, 'LOCALIZE_SEO_PRERENDER_URL', "https://prerender.localizejs.com/api/prerender/get")
+PRERENDER_URL = getattr(django_settings, 'LOCALIZE_SEO_PRERENDER_URL', "https://prerender-cdn.localizejs.com/api/prerender/get")
