@@ -23,7 +23,7 @@ setup(
     'pep8==1.6.2',
     'pyasn1==0.1.7',
     'pycparser==2.10',
-    'pyOpenSSL==0.14',
+    'pyOpenSSL==17.5.0',
     'requests==2.6.0',
     'six==1.9.0'
   ],
