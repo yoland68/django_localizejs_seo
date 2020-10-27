@@ -14,7 +14,7 @@ setup(
     'django>=1.5'
     'autopep8==1.1.1',
     'cffi==0.9.2',
-    'cryptography==0.8.1',
+    'cryptography==3.2',
     'enum34==1.0.4',
     'gnureadline==6.3.3',
     'ipdb==0.8',
