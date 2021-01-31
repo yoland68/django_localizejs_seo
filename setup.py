@@ -24,7 +24,7 @@ setup(
     'pyasn1==0.1.7',
     'pycparser==2.10',
     'pyOpenSSL==17.5.0',
-    'requests==2.6.0',
+    'requests==2.20.0',
     'six==1.9.0'
   ],
 )
