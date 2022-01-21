@@ -18,7 +18,7 @@ setup(
     'enum34==1.0.4',
     'gnureadline==6.3.3',
     'ipdb==0.8',
-    'ipython==3.0.0',
+    'ipython==7.16.3',
     'ndg-httpsclient==0.3.3',
     'pep8==1.6.2',
     'pyasn1==0.1.7',
